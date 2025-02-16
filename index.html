@@ -1,0 +1,54 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Library</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <div class="container">
+
+            <header class="header">
+                <h1 class="title">Simple Book Library</h1>
+                <input class="search-box" type="text" placeholder="Search books..."/>
+            </header>
+
+            <section class="book-list">
+                <h2 class="section-title">Recent Books</h2>
+
+                <ul class="books">
+                    <li class="book-item">
+                        <div class="book-details">
+                            <p class="book-title">Prince Of Persia</p>
+                            <button class="btn-delete">Delete</button>
+                        </div>
+                    </li>
+                    <li class="book-item">
+                        <div class="book-details">
+                            <p class="book-title">Mein Kampf</p>
+                            <button class="btn-delete">Delete</button>
+                        </div>
+                    </li>
+                    <li class="book-item">
+                        <div class="book-details">
+                            <p class="book-title">Inception</p>
+                            <button class="btn-delete">Delete</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <form class="toggle-books">
+                <input type="checkbox" id="hide-books" />
+                <label for="hide-books">Hide All the Books</label>
+            </form>
+
+            <form class="add-book">
+                <input type="text" placeholder="Add a book..." />
+                <button type="submit">Add</button>
+            </form>
+
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

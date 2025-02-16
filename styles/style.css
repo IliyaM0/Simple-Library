@@ -1,0 +1,166 @@
+/* ----------------------------------- General Styles ----------------------------------- */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ----------------------------------- Container Styles ----------------------------------- */
+.container {
+    margin: 1rem 11rem;
+    border: 1px solid #c3c5c1;
+    border-radius: 7px;
+    box-shadow: 6px 3px 6px 3px #b8b9b8;
+}
+
+/* ----------------------------------- Header Styles ----------------------------------- */
+.header {
+    background-color: #aa47bc9d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px;
+    border-radius: 10px;
+}
+
+.header .title {
+    color: #2c2c2c;
+    font-size: 40px;
+}
+
+.header .search-box {
+    width: 60%;
+    height: 43px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #b8b9b89f;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+
+.header .search-box:focus {
+    box-shadow: 5px 5px 5px 5px #7c7c7c42;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* ----------------------------------- Section Title Styles ----------------------------------- */
+.section-title {
+    margin: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* ----------------------------------- Book List Styles ----------------------------------- */
+ul {
+    list-style: none;
+}
+
+.books {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.book-item {
+    display: flex;
+    justify-content: space-between;
+    margin:0 0 10px 30px;   
+}
+
+.book-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #aa47bc50;
+    width: 90%;
+    transition: all 0.3s ease;
+}
+
+.book-details:hover {
+    background-color: #aa47bc33;
+    box-shadow: 0 0 10px #aa47bc33;
+    transform: scale(1.02);
+}
+
+.book-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-delete {
+    color: white;
+    padding: 8px 20px;
+    margin-right: 30px;
+    background-color: #ab47bc;
+    border: 1px solid #ab47bc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #2f1235;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #2f1235;
+}
+
+/*----------------------------------- Toggle Books Styles ----------------------------------- */
+.toggle-books {
+    margin: 30px 0 0 30px;
+}
+
+/* ----------------------------------- Add Book Styles ----------------------------------- */
+.add-book {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+}
+
+.add-book input {
+    width: 40%;
+    height: 30px;
+    padding: 15px;
+    background-color: #b8b9b821;
+    border: 1px solid #b8b9b89f;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+
+.add-book input:focus {
+    box-shadow: 5px 5px #7c7c7c25;
+    border: none;
+    outline: 1px solid #ab47bc;
+}
+
+.add-book button {
+    color: white;
+    padding: 0 25px;
+    background-color: #ab47bc;
+    border: 1px solid #ab47bc;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.add-book button:hover {
+    background-color: #2f1235;
+}
+
+/* ----------------------------------- Responsive Design -----------------------------------*/
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .header .search-box {
+        width: 80%;
+    }
+
+    .add-book input {
+        width: 60%;
+    }
+}
