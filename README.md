@@ -26,7 +26,7 @@ Persistent Data: All changes are saved using localStorage, so data persists acro
 
 # 🛠 How to Use
 
-🚀Live preview available at: https://iliyam0.github.io/Frame-Template/
+🚀Live preview available at: [https://iliyam0.github.io/Frame-Template/](https://iliyam0.github.io/Simple-Library/)
 
 
 # ⚠️ Important Note
